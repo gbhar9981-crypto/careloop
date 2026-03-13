@@ -5,7 +5,7 @@ import os
 
 # Use MySQL with pymysql
 # Password contains an @ symbol, so it must be URL encoded as %40
-DEFAULT_DATABASE_URL = "mysql+pymysql://root:Prasant2457%40@localhost/careloop"
+DATABASE_URL = "mysql+pymysql://admin:Prasant2457@careloop-db.c8ru6qqwilnm.us-east-1.rds.amazonaws.com:3306/careloop"
 SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", DEFAULT_DATABASE_URL)
 
 engine = create_engine(
