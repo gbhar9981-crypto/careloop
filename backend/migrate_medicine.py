@@ -2,10 +2,10 @@ import pymysql
 
 # Database connection details
 # URL: mysql+pymysql://root:Prasant2457%40@localhost/careloop
-host = "localhost"
-user = "root"
-password = "Prasant2457@"
-database = "careloop"
+host="careloop-db.c8ru6qqwilnm.us-east-1.rds.amazonaws.com",
+user="admin",
+password="Prasant2457",
+database="careloop"
 
 def migrate():
     try:
