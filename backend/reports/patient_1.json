@@ -1,0 +1,17 @@
+{
+  "patient_id": 1,
+  "name": "Jane Doe",
+  "age": 32,
+  "blood_group": "O+",
+  "latest_diagnosis": "Mild Hypertension",
+  "allergies": ["Penicillin", "Peanuts"],
+  "prescriptions": [
+    {
+      "medicine": "Lisinopril",
+      "dosage": "10mg",
+      "frequency": "Once daily"
+    }
+  ],
+  "last_visit": "2023-10-25",
+  "next_appointment": "2024-04-20"
+}
