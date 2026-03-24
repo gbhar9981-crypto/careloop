@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import boto3
 import json
 from fastapi import FastAPI, Depends, HTTPException, status
@@ -8,7 +9,7 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 
 from . import models, schemas, auth, database
-
+load_dotenv()
 # Create tables
 models.Base.metadata.create_all(bind=database.engine)
 
