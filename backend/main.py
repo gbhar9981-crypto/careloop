@@ -46,9 +46,9 @@ app.add_middleware(
 try:
     bedrock_runtime = boto3.client(
         service_name='bedrock-runtime',
-        region_name='us-east-1', # Change to your region
-        aws_access_key_id="AKIAQR2536KGTTF4CZ4N",
-        aws_secret_access_key="2wm55WWAQz/YuD/e9ETCkd8/q2rRWB7R+PrBCs9i",
+      region_name=os.getenv("AWS_REGION"),
+    aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
+    aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
     )
 except Exception as e:
     print(f"Bedrock initialization error: {e}")
